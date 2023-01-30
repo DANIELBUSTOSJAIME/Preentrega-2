@@ -13,47 +13,32 @@ background: linear-gradient(to bottom,  #fefcea 0%,#f1da36 100%); /* W3C, IE10+,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
 }
 
-.conteiner {
+.conteinerr {
     display: grid; 
     grid-template-columns: 1fr; 
     grid-template-rows: 1fr 0.5fr 3fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
       "topp"
-      "nav"
+      "navegacion"
       "portadas"
       "footerr"; 
   }
   .topp { 
     grid-area: topp; 
 }
-.nav{
-    grid-area: nav;
+.navegacion{
+    grid-area: navavegacion;
 }
 .menu{
-    width: 100%;
-    background-color: rgb(98, 102, 47);
+    background-color: rgb(227, 230, 53);
     padding: 2%;
-    list-style: none;
     text-align: center;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
 
-.menu li {
-   display: inline-block;
-   text-align: center;
-}
-
-.menu li a {
-    padding: 2px;
-    margin: 5px;
-    color:beige;
-    text-decoration: none;
-    display: inline-block;    
-}
-
 .menu li a:hover{
-    background-color: rgb(154, 190, 53);
+    background-color: rgb(154, 221, 30);
     border-radius: 80%;
 }
 
@@ -65,13 +50,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
     flex-wrap: wrap;
 }
 
-.imggrande{
+.imagengrande{
     height: 450px;
     width: 450px;
     margin: 20px;
 }
 
-.imggrande:hover{
+.imagengrande:hover{
     transform: scale(1.2,1.2);
     transition: all 2s;
 }
@@ -151,7 +136,7 @@ h1 {color: rgb(2, 2, 1);
 h2{ text-align: center ;
     font-size: 2rem;
     font-style: italic;
-    color: rgb(235, 190, 67);
+    color: rgb(139, 108, 22);
     font-family: 'Fira Sans Extra Condensed', sans-serif
 }
 
@@ -231,99 +216,21 @@ p{
 }
 
 .obras{
-    width: auto;
-    height: auto;
-    margin:10 auto;
+    margin: 0 auto;
     border: solid black 2px;
     text-align: center;
+    align-content: center;
     background-color: rgb(225, 228, 41);
-    display: grid;
-    row-gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: 
-    "obra11 obra12 obra13"
-    "obra21 obra22 obra23"
-    "obra31 obra32 obra33"
-    "obra41 obra42 obra43"
-    "obra51 obra52 obra53"  
 }
 
-.obra11{
-    grid-area: obra11;
-    background-color: rgb(219, 250, 215); 
-}
-.obra12{
-    grid-area: obra12;
-    background-color: rgb(219, 250, 215);
-}
-.obra13{
-    grid-area: obra13;
-    background-color: rgb(219, 250, 215);
-}
-.obra21{
-    grid-area: obra21;
-    background-color: rgb(219, 250, 215);
-}
-.obra22{
-    grid-area: obra22;
-    background-color: rgb(219, 250, 215);
-}
-.obra23{
-    grid-area: obra23;
-    background-color: rgb(219, 250, 215);
-}
-.obra31{
-    grid-area: obra31;
-    background-color: rgb(219, 250, 215);
-}
-.obra32{
-    grid-area: obra32;
-    background-color: rgb(219, 250, 215);
-}
-.obra33{
-    grid-area: obra33;
-    background-color: rgb(219, 250, 215);
-}
-.obra41{
-    grid-area: obra41;
-    background-color: rgb(219, 250, 215);
-}
-.obra42{
-    grid-area: obra42;
-    background-color: rgb(219, 250, 215);
-}
-.obra43{
-    grid-area: obra43;
-    background-color: rgb(219, 250, 215);
-}
-.obra51{
-    grid-area: obra51;
-    background-color: rgb(219, 250, 215);
-}
-.obra52{
-    grid-area: obra52;
-    background-color: rgb(219, 250, 215);
-}
-.obra53{
-    grid-area: obra53;
-    background-color: rgb(219, 250, 215);
-}
+
 .serv{
-    width: auto;
-    height: auto;
+    
     background-color: rgb(225, 228, 41);
     margin: 10 auto;
-    display: grid;
-    gap: 2px;
     border: solid black 2px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "planos planos"
-    "supervision supervision"
-    "instalacionagua instalaciongas"
-    "renderizados renderizados";
+    text-align: center;
+    align-content: center;
 }
 
 .servicios{
@@ -337,47 +244,18 @@ p{
 }
 
 .imagenchica{
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
     padding: 3rem;
 }
 .imagenchica:hover{
-    transform: scale(1.2,1.2);
+    transform: scale(1.5,1.5);
     transition: all 2s;
 }
-#planos
-{
-    grid-area: planos;
-    margin: 1rem;
-    background-color: rgb(219, 250, 215);
-    text-align: center;
-}
 
-#supervision{
-    grid-area: supervision;
+.titulos{
     margin: 1rem;
-    background-color: rgb(219, 250, 215);
-    text-align: center;
-}
-
-#instalacionagua{
-    grid-area: instalacionagua;
-    margin: 1rem;
-    background-color: rgb(219, 250, 215);
-    text-align: center;
-}
-
-#instalaciongas{
-    grid-area: instalaciongas;
-    margin: 1rem;
-    background-color: rgb(219, 250, 215);
-    text-align: center;
-}
-
-#renderizados{
-    grid-area: renderizados;
-    margin: 1rem;
-    background-color: rgb(219, 250, 215);
+    background-color: rgb(154, 221, 30);
     text-align: center;
 }
 
@@ -413,9 +291,8 @@ h4{
 }
 
 #formulario{
-    background-color: rgb(219, 250, 215); 
+    background-color: rgb(154, 221, 30); 
     padding: 0.8rem;
-    width: 450;
     font-family: 'Fira Sans Extra Condensed', sans-serif;    
     margin: 0.5cm;
 }
@@ -425,7 +302,7 @@ h4{
 .lineas{
     display: block;
     padding: 5px;
-    width: 450 ;
+    width: 400 ;
     text-align: justify;
 }
 
@@ -445,50 +322,14 @@ h4{
         flex-direction: column;
         text-align: center;
     }
-git
     .portadas{
         grid-area: portadas;
         text-align: center;
     } 
     .imggrande{
-        height: 100px;
-        width: 100px;
+        height: 250px;
+        width: 250px;
         margin: 5px;
-    }
-    .serv{
-        width: auto;
-        height: auto;
-        margin: 5px;;
-        gap: none;
-    }  
-    #planos{    
-        width: 93%;
-    }
-    #supervision{
-        width: 93%;
-    }
-    
-    #instalacionagua{
-        width: 80%;
-        padding: 0.5;
-    }
-    
-    #instalaciongas{
-        width: 85%;
-    }
-    
-    #renderizados{
-        width: 93%;
-    }
-    .imagenchica{
-        width: 350px;
-        height: 350px;
-        padding: 3rem;
-    }
-    .obras{
-        width: auto;
-        height: auto;
-        
     }
     #contacto{
         display: flex;
