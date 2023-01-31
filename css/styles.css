@@ -299,6 +299,8 @@ h4{
 }
 
 #formulario{
+    width: auto;
+    height: auto;
     background-color: rgb(219, 143, 44); 
     padding: 0.8rem;
     font-family: 'Fira Sans Extra Condensed', sans-serif;    
@@ -353,7 +355,7 @@ h4{
         transform: scale(2,2);
         transition: all 2s;
     }
+    .lineas{
+        width: 350;
+    }
 }
-
-
-    
