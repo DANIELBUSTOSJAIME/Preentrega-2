@@ -23,13 +23,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
       "navegacion"
       "portadas"
       "footerr"; 
-  }
-  .topp { 
+}
+
+.topp { 
     grid-area: topp; 
 }
+
 .navegacion{
     grid-area: navavegacion;
 }
+
 .menu{
     background-color: rgba(255, 196, 0, 0.726);
     padding: 2%;
@@ -65,6 +68,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
     text-align: center;
     animation: logo 3s ease;
 }
+
 @keyframes logo {
     0% {
     opacity: 0;}
@@ -85,9 +89,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
     opacity: 0.5;}
     100% {
     opacity: 1;}
+
 }
 #tit2{
     animation: titulosecundario 7s ease;
+
 }
 @keyframes titulosecundario {
     0%{
@@ -99,6 +105,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
         opacity: 1;
     }
 }
+
 .logo{
     width: 150px;
 }
@@ -109,19 +116,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
     align-items: center;
 
 }
+
 #aboutus{
     width: 55% ;
     font-size: 1.5rem;
     font-weight: bolder;
     text-align: center;
 }
+
 #somos {
     width: fit-content;
     background-color: rgba(255, 196, 0, 0.726);
     margin: 10 auto;
     text-align: center;
 }
-
 
 h1 {color: rgb(2, 2, 1);
     font-size: 3rem;
@@ -196,6 +204,7 @@ p{
     text-align: center;
     left: 900;
 }
+
 .redessociales img{
     width: 30
 }
@@ -220,7 +229,6 @@ p{
     background-color: rgba(255, 196, 0, 0.726);
 }
 
-
 .serv{
     
     background-color: rgba(255, 196, 0, 0.726);
@@ -234,6 +242,7 @@ p{
     font-size: 1.2rem;
     padding: 1rem;
 }
+
 .obra{
     font-size: 1.2rem;
     padding: 1rem;
@@ -245,6 +254,7 @@ p{
     height: 250px;
     padding: 3rem;
 }
+
 .imagenchica:hover{
     transform: scale(1.5,1.5);
     transition: all 2s;
@@ -260,7 +270,8 @@ p{
     width: fit-content;
     background-color: rgba(255, 196, 0, 0.726);
     margin: 10 auto;
-    text-align: center;}
+    text-align: center;
+}
 
 h4{
     font-size: 1.5rem;
@@ -293,9 +304,11 @@ h4{
     font-family: 'Fira Sans Extra Condensed', sans-serif;    
     margin: 0.5cm;
 }
+
 #mapa{
   margin: 0.5cm;
 }
+
 .lineas{
     display: block;
     padding: 5px;
